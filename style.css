@@ -2,3 +2,45 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: #0d0d0d;
+}
+
+#moon {
+    position: fixed;
+    top: 2%;
+    left: 0;
+    filter: grayscale(100%);
+    z-index: 1;
+}
+
+#bat-1 {
+    position: fixed;
+    top: 8%;
+    left: 2%;
+    z-index: 3;
+    width: 90px;
+}
+
+#bat-2 {
+    position: fixed;
+    top: 8%;
+    left: 2%;
+    z-index: 3;
+    width: 90px;
+}
+
+#bat-3 {
+    position: fixed;
+    top: 8%;
+    left: 2%;
+    z-index: 3;
+    width: 90px;
+}
+
+#home {
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
