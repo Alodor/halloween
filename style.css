@@ -44,6 +44,11 @@ body {
     bottom: 0;
     right: 0;
     width: 20%;
+    animation-name: sky;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    animation-duration: 120s;
+    animation-iteration-count: 1;
 }
 
 #tree {
