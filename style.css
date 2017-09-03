@@ -9,87 +9,91 @@ body {
 
 #bg {
     position: fixed;
+    z-index: 1;
     bottom: 0;
     width: 100%;
     height: 50%;
 }
 
+#fog-1 {
+    position: fixed;
+    z-index: 2;
+    bottom: 15%;
+    right: 0;    
+    width: 40%;
+}
+
 #moon {
     position: fixed;
+    z-index: 3;
     top: 2%;
     left: 0;
     filter: grayscale(100%);
-    z-index: 1;
-}
-
-#bat-1 {
-    position: fixed;
-    top: 8%;
-    left: 2%;
-    z-index: 3;
-    width: 90px;
-}
-
-#bat-2 {
-    position: fixed;
-    top: 14%;
-    left: 10%;
-    z-index: 3;
-    width: 120px;
-}
-
-#bat-3 {
-    position: fixed;
-    top: 22%;
-    left: 6%;
-    z-index: 3;
-    width: 70px;
-}
-
-#home {
-    position: fixed;
-    bottom: 0;
-    z-index: 2;
-}
-
-#tree {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    height: 80%;
-    z-index: 2;
-}
-
-#fog-1 {
-    position: fixed;
-    bottom: 0;
-    z-index: 12;
-    width: 50%;
-}
-
-#fog-2 {
-    position: fixed;
-    bottom: 15%;
-    right: 0;
-    z-index: 0;
-    width: 50%;
 }
 
 #cemetery {
     position: fixed;
+    z-index: 4;
     bottom: 5%;
     width: 65%;
 }
 
 #jack {
     position: fixed;
+    z-index: 5;
     bottom: 0;
     right: 0;
     width: 20%;
 }
 
+#tree {
+    position: fixed;
+    z-index: 6;
+    bottom: 0;
+    right: 0;
+    height: 80%;    
+}
+
+#bat-1 {
+    position: fixed;
+    z-index: 7;
+    top: 8%;
+    left: 2%;    
+    width: 90px;
+}
+
+#bat-2 {
+    position: fixed;
+    z-index: 7;
+    top: 14%;
+    left: 10%;    
+    width: 120px;
+}
+
+#bat-3 {
+    position: fixed;
+    z-index: 7;
+    top: 22%;
+    left: 6%;    
+    width: 70px;
+}
+
+#home {
+    position: fixed;
+    z-index: 8;
+    bottom: 0;    
+}
+
+#fog-2 {
+    position: fixed;
+    z-index: 9;
+    bottom: 0;    
+    width: 50%;
+}
+
 #relampago {
     position: fixed;
+    z-index: 10;
     top: 0;
     right: 0;
 }
