@@ -5,6 +5,10 @@
 
 body {
     background-color: #100719;
+    animation-name: sky;
+    animation-direction: alternate;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
 }
 
 #bg {
@@ -21,6 +25,10 @@ body {
     bottom: 15%;
     right: 0;    
     width: 40%;
+    animation-name: fog-1;
+    animation-direction: alternate;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
 }
 
 #moon {
@@ -63,7 +71,7 @@ body {
     z-index: 7;
     top: 8%;
     left: 2%;    
-    width: 90px;
+    width: 90px;    
 }
 
 #bat-2 {
@@ -72,6 +80,10 @@ body {
     top: 14%;
     left: 10%;    
     width: 120px;
+    animation-name: bat;
+    animation-direction: alternate;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
 }
 
 #bat-3 {
@@ -93,6 +105,10 @@ body {
     z-index: 9;
     bottom: 0;    
     width: 50%;
+    animation-name: fog-2;
+    animation-direction: alternate;
+    animation-duration: 160s;
+    animation-iteration-count: infinite;
 }
 
 #relampago {
@@ -100,6 +116,10 @@ body {
     z-index: 10;
     top: 0;
     right: 0;
+    animation-name: relampago;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 #calabaza {
@@ -112,7 +132,37 @@ body {
 
 
 /*--- Animaciones ---*/
+@keyframes sky {
+    0% {background-color: #100719;}
+    50% {background-color: #0b0719;}
+    100% {background-color: #151515;}
+}
+
 @keyframes jack {
     from {right: 12%;}
     to {right: 70%;}
+}
+
+@keyframes bat {
+    from {transform: scale(1.5);}
+    to {left: 12%;}
+}
+
+@keyframes fog-1 {
+    from {right: 0;}
+    to {right: 100%;}
+}
+
+@keyframes fog-2 {
+    from {left: 0;}
+    to {left: 90%;}
+}
+
+@keyframes relampago {
+    0% {opacity: 0}
+    10% {opacity: 1}
+    20% {opacity: 0}
+    60% {opacity: 1}
+    80% {opacity: 0}
+    100% {opacity: 1}
 }
