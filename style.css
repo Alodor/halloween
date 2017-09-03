@@ -42,13 +42,12 @@ body {
     position: fixed;
     z-index: 5;
     bottom: 0;
-    right: 0;
+    right: 12%;
     width: 20%;
-    animation-name: sky;
-    animation-direction: alternate;
-    animation-delay: 1s;
-    animation-duration: 120s;
-    animation-iteration-count: 1;
+    animation-name: jack;
+    animation-direction: normal;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
 }
 
 #tree {
@@ -101,4 +100,19 @@ body {
     z-index: 10;
     top: 0;
     right: 0;
+}
+
+#calabaza {
+    position: fixed;
+    z-index: 11;
+    bottom: -5px;
+    left: 30%;
+    width: 15%;
+}
+
+
+/*--- Animaciones ---*/
+@keyframes jack {
+    from {right: 12%;}
+    to {right: 70%;}
 }
